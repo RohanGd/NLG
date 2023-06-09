@@ -23,7 +23,7 @@ dropout = 0.0
 torch.manual_seed(1337)
 
 # wget https://raw.githubusercontent.com/karpathy/char-rnn/master/data/tinyshakespeare/input.txt
-with open('poetry.txt', 'r', encoding='latin-1') as f:
+with open('corpus\poetry.txt', 'r', encoding='latin-1') as f:
     text = f.read()
 
 # here are all the unique characters that occur in this text
@@ -212,7 +212,7 @@ m = model.to(device)
 #     optimizer.step()
 
 
-m.load_state_dict(torch.load("charcterModel", map_location=torch.device(device)))
+m.load_state_dict(torch.load("character_model\charcterModel", map_location=torch.device(device)))
 
 
 
