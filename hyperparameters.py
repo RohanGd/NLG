@@ -10,4 +10,4 @@ n_embd = 32
 n_head = 8
 n_layer = 4
 
-dropout = 0
+dropout = 0.05
